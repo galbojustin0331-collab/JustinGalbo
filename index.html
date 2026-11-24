@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Justin Ryem M. Galbo | Career Portfolio</title>
+<meta name="description" content="Career portfolio of Justin Ryem M. Galbo, aspiring Computer Engineer.">
+<meta name="theme-color" content="#0a1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--b700:#1d4ed8;--b600:#2563eb;--b500:#3b82f6;--b200:#23407c;--b100:#15264a;--b50:#0f1a33;--accent:#7aa7ff;--heading:#eaf1ff;--edge:#4f7fe0;--ink:#e3eaf7;--muted:#9aabc8;--line:#1f2e4d;--bg:#0a1020;--surface:#111b33;--r:16px;--font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--fh:'Plus Jakarta Sans',var(--font)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));height:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3,h4{font-family:var(--fh);line-height:1.15;margin:0;color:var(--heading)}
+p{margin:0 0 1rem}a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--b700);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:12px}
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:calc(10px + env(safe-area-inset-top,0px)) 20px 10px;background:rgba(10,16,32,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--b700);color:#fff;font:800 .9rem var(--fh);text-decoration:none;flex:none}
+.nav nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav nav a{padding:6px 12px;border-radius:999px;color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;white-space:nowrap;transition:background .2s,color .2s}
+.nav nav a:hover{background:var(--b50);color:var(--accent)}
+.nav nav a.on{background:var(--b100);color:var(--heading)}
+.cover{position:relative;min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:24px;padding:90px max(20px,calc((100% - 1080px)/2)) 60px;background:radial-gradient(900px 500px at 85% 10%,var(--b100),transparent 60%),radial-gradient(700px 400px at 0% 100%,var(--b50),transparent 60%),var(--bg);overflow:hidden}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--b200);border-radius:999px;background:var(--surface);color:var(--heading);font-size:.85rem;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--b500);box-shadow:0 0 0 4px var(--b100)}
+.cover h1{margin:18px 0 10px;font-size:clamp(2.6rem,8vw,5.4rem);font-weight:800;letter-spacing:-.03em}
+.role{font:700 clamp(1.1rem,2.4vw,1.5rem) var(--fh);color:var(--accent);margin-bottom:10px}
+.tagline{max-width:34rem;color:var(--muted);font-size:1.08rem}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-block;padding:10px 20px;border-radius:999px;border:1.5px solid var(--b200);background:var(--surface);color:var(--heading);font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .18s,border-color .18s,background .18s}
+.btn:hover{transform:translateY(-2px);border-color:var(--b500)}
+.btn.pri{background:var(--b700);border-color:var(--accent);color:#fff}
+.btn.pri:hover{background:var(--b600)}
+.art{position:relative;height:420px}
+.panel{position:absolute;border:3px solid var(--edge);border-radius:14px;background:var(--surface);box-shadow:8px 8px 0 var(--b200)}
+.p1{width:62%;height:56%;top:0;left:6%;transform:rotate(-3deg);background:radial-gradient(var(--b500) 1.3px,transparent 1.8px) 0 0/11px 11px,linear-gradient(135deg,var(--b100),var(--surface));display:flex;align-items:flex-end;padding:14px}
+.p1 span{font:800 1rem var(--fh);letter-spacing:.14em;color:var(--heading);background:var(--surface);padding:4px 10px;border:2px solid var(--edge)}
+.p2{width:46%;height:42%;right:0;top:24%;transform:rotate(4deg);background:var(--b700);color:#fff;display:grid;place-items:center;padding:18px}
+.p2 svg{width:80%}
+.p3{width:56%;height:34%;bottom:0;left:14%;transform:rotate(-1.5deg);display:grid;place-items:center;background:radial-gradient(var(--b200) 1.2px,transparent 1.7px) 0 0/10px 10px,var(--surface)}
+.bubble{position:relative;padding:10px 18px;border:2.5px solid var(--edge);border-radius:18px;background:var(--bg);color:var(--heading);font:700 1.1rem var(--fh)}
+.bubble::after{content:"";position:absolute;left:24px;bottom:-12px;width:18px;height:18px;background:var(--bg);border-right:2.5px solid var(--edge);border-bottom:2.5px solid var(--edge);transform:rotate(45deg)}
+.section{padding:96px 0}.section.alt{background:var(--b50);border-block:1px solid var(--line)}
+.kicker{font:700 .9rem var(--fh);color:var(--accent);margin-bottom:8px}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);letter-spacing:-.02em}
+.lead{color:var(--muted);font-size:1.1rem;max-width:40rem;margin-top:10px}
+.about{margin-top:28px}
+.avatar{width:240px;height:240px;border-radius:24px;border:3px solid var(--edge);box-shadow:8px 8px 0 var(--b200);background:linear-gradient(135deg,var(--b100),var(--surface));display:grid;place-items:center;font:800 4rem var(--fh);color:var(--accent)}
+.about-text{max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.fact{padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.fact .k{display:block;font-size:.8rem;color:var(--muted)}
+.fact .v{font:700 1.05rem var(--fh);color:var(--heading)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+h3{font-size:1.3rem;margin-bottom:16px}
+.stack{display:grid;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.card h4{font-size:1.05rem}.card p{color:var(--muted);margin:8px 0 0;font-size:.97rem}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.tag{flex:none;padding:3px 10px;border-radius:999px;background:var(--b100);color:var(--accent);font-size:.78rem;font-weight:600;border:1px solid var(--b200)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:40px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{padding:5px 12px;border-radius:999px;border:1px solid var(--b200);background:var(--b50);font-size:.88rem;color:var(--ink)}
+.proj{display:flex;flex-direction:column}
+.thumb{height:110px;border-radius:12px;margin-bottom:16px;border:2px solid var(--edge);background:radial-gradient(var(--b500) 1.2px,transparent 1.7px) 0 0/10px 10px,linear-gradient(135deg,var(--b100),var(--surface))}
+.line{position:relative;margin:40px 0 0;padding-left:28px;border-left:3px solid var(--b200);display:grid;gap:26px}
+.step{position:relative}
+.step::before{content:"";position:absolute;left:-37px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.step .yr{font:800 1.1rem var(--fh);color:var(--accent)}
+.step h4{margin:2px 0 4px;font-size:1.1rem}.step p{color:var(--muted);margin:0;max-width:56ch}
+.contact{text-align:center}.contact .lead{margin-inline:auto}
+.contact .links{justify-content:center;margin-top:28px}
+footer{padding:28px 20px calc(28px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:820px){.cover{grid-template-columns:1fr;padding-top:100px}.art{height:300px}.about,.two{grid-template-columns:1fr}.avatar{width:180px;height:180px;font-size:3rem}.section{padding:72px 0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="nav">
+  <a class="mark" href="#top" aria-label="Back to top">JG</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#vision">Vision</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#runway">Runway</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="content">
+<section class="cover" id="top">
+  <div>
+    <p class="eyebrow"><span class="dot"></span>Career Portfolio</p>
+    <h1>Justin Ryem M. Galbo</h1>
+    <p class="role">Aspiring Computer Engineer, Class of 2036</p>
+    <p class="tagline">I want to design the systems between hardware and software: the devices, circuits and code that make technology work smoothly for everyone.</p>
+    <nav class="links" aria-label="Jump to a section">
+      <a class="btn pri" href="#projects">See my projects</a>
+      <a class="btn" href="#vision">Vision 2036</a>
+      <a class="btn" href="#contact">Contact me</a>
+    </nav>
+  </div>
+  <div class="art" aria-hidden="true">
+    <div class="panel p1"><span>CHAPTER 01</span></div>
+    <div class="panel p2"><svg viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M36 18h48c12 0 22 14 24 34l2 14c1 7-5 12-12 10-6-1-10-6-14-12H36c-4 6-8 11-14 12-7 2-13-3-12-10l2-14c2-20 12-34 24-34z"/><path d="M34 32v12M28 38h12"/><circle cx="86" cy="35" r="3" fill="currentColor"/><circle cx="96" cy="43" r="3" fill="currentColor"/></svg></div>
+    <div class="panel p3"><span class="bubble">Let’s begin!</span></div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <p class="kicker">About</p>
+    <h2>About me</h2>
+    <div class="about">
+      <div class="about-text">
+        <p>I am Justin Ryem M. Galbo, a student who aspires to design the systems that sit between hardware and software: the devices, circuits and code that make technology work smoothly for everyone.</p>
+        <p>My path started with curiosity about how computers and games actually work. Today I turn that curiosity into reliable, thoughtful engineering, and I am still learning every day.</p>
+        <div class="facts">
+          <div class="fact"><span class="k">Future role</span><span class="v">Computer Engineer</span></div>
+          <div class="fact"><span class="k">Target year</span><span class="v">2036</span></div>
+          <div class="fact"><span class="k">Focus</span><span class="v">Hardware + software</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="vision">
+  <div class="wrap">
+    <p class="kicker">Vision</p>
+    <h2>Vision 2036</h2>
+    <p class="lead">Where I see my career going, and what keeps me going.</p>
+    <div class="two">
+      <div>
+        <h3>Career goals</h3>
+        <div class="stack">
+          <article class="card"><div class="row"><h4>Design reliable computer systems</h4><span class="tag">Goal</span></div><p>Work on hardware and software that people can trust every day.</p></article>
+          <article class="card"><div class="row"><h4>Build smart, connected devices</h4><span class="tag">Goal</span></div><p>Embedded systems and IoT that solve real problems in the community.</p></article>
+          <article class="card"><div class="row"><h4>Keep learning and mentoring</h4><span class="tag">Goal</span></div><p>Share what I learn with younger students who are curious about tech.</p></article>
+        </div>
+      </div>
+      <div>
+        <h3>What keeps me going</h3>
+        <div class="stack">
+          <article class="card"><h4>Curiosity</h4><p>I like opening things up, in code or in hardware, to see how they really work.</p></article>
+          <article class="card"><h4>Usefulness</h4><p>Good technology should make life easier for ordinary people, not only experts.</p></article>
+          <article class="card"><h4>Steady practice</h4><p>Small, regular progress in coding, math and electronics adds up over ten years.</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <p class="kicker">Skills</p>
+    <h2>What I’m building</h2>
+    <p class="lead">Skills I use now and the ones I’m growing toward.</p>
+    <div class="grid">
+      <article class="card"><h4>Programming</h4><p>Writing clear code and learning how programs run on real machines.</p><div class="chips"><span class="chip">Python</span><span class="chip">C / C++</span><span class="chip">HTML &amp; CSS</span><span class="chip">JavaScript</span></div></article>
+      <article class="card"><h4>Hardware &amp; electronics</h4><p>Understanding circuits, sensors and how software controls them.</p><div class="chips"><span class="chip">Circuits</span><span class="chip">Arduino</span><span class="chip">Sensors</span></div></article>
+      <article class="card"><h4>Computer systems</h4><p>How processors, memory and operating systems fit together.</p><div class="chips"><span class="chip">Logic design</span><span class="chip">Linux basics</span><span class="chip">Networking</span></div></article>
+      <article class="card"><h4>Working with others</h4><p>Skills that make technical work succeed in a team.</p><div class="chips"><span class="chip">Problem solving</span><span class="chip">Teamwork</span><span class="chip">Documentation</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <p class="kicker">Projects</p>
+    <h2>Projects</h2>
+    <p class="lead">Things I’m making to turn curiosity into proof.</p>
+    <div class="grid">
+      <article class="card proj"><div class="thumb"></div><div class="row"><h4>This portfolio</h4><span class="tag">Live</span></div><p>A responsive, accessible site that tells my story and tracks my path to 2036.</p></article>
+      <article class="card proj"><div class="thumb"></div><div class="row"><h4>Sensor station</h4><span class="tag">Planned</span></div><p>An Arduino board that reads temperature and humidity and shows it on a small display.</p></article>
+      <article class="card proj"><div class="thumb"></div><div class="row"><h4>Simple game</h4><span class="tag">Planned</span></div><p>A small game built from scratch to learn how game loops, input and graphics work.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="runway">
+  <div class="wrap">
+    <p class="kicker">Runway</p>
+    <h2>The runway to 2036</h2>
+    <p class="lead">My step-by-step plan, from learning the basics to working as an engineer.</p>
+    <div class="line">
+      <div class="step"><span class="yr">Now</span><h4>Build the foundation</h4><p>Strengthen math and science, practice coding every week, and start small hardware projects.</p></div>
+      <div class="step"><span class="yr">Next</span><h4>Enter a computer engineering program</h4><p>Study circuits, programming, data structures and digital design.</p></div>
+      <div class="step"><span class="yr">Mid-college</span><h4>Gain hands-on experience</h4><p>Join tech clubs and competitions, and look for internships in embedded systems or IoT.</p></div>
+      <div class="step"><span class="yr">Graduation</span><h4>Earn the degree and a strong portfolio</h4><p>Finish with real projects, and prepare for licensure and the first engineering role.</p></div>
+      <div class="step"><span class="yr">2036</span><h4>Working as a Computer Engineer</h4><p>Designing reliable systems, and mentoring the next group of students.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt contact" id="contact">
+  <div class="wrap">
+    <p class="kicker">Contact</p>
+    <h2>Let’s connect</h2>
+    <p class="lead">Want to talk about tech, projects or opportunities? Send me a message.</p>
+    <nav class="links" aria-label="Contact links">
+      <a class="btn pri" href="mailto:Galbojustin0331@gmail.com">Email me</a>
+      <a class="btn" href="#top">Back to top</a>
+    </nav>
+  </div>
+</section>
+</main>
+<footer>© 2026 Justin Ryem M. Galbo · Career Portfolio</footer>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.nav nav a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});var a=map[e.target.id];if(a)a.classList.add('on')}
+  })},{rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s)});
+})();
+</script>
+</body>
+</html>
